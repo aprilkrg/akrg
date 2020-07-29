@@ -1,5 +1,6 @@
 body {
-  
+    margin: 0;
+    /* height: 200vh; */
 
 }
 
@@ -11,22 +12,44 @@ body {
 }
 
 .NavBar {
-  border: red 3px dashed;
+  /* border: red 3px dashed; */
   float: right;
   margin: 1vmin;
   
 }
+
 .Footer {
-  border: green 1px dashed;
+  /* border: green 1px dashed; */
+  background-color: rgb(1, 63, 63);
   font-size: calc(5px + 2vmin);
+  color: white;
   text-align: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: sticky;
+  /* position: fixed; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* margin: 1vh; */
+}
+
+.FooterLogo {
+  /* border: blue 3px dashed; */
+  height: calc(5vh + 2vmin);
+  padding: 0 5px;
 }
 
 .FooterCopyright {
-  border: purple 3px dashed;
+  /* border: purple 3px dashed; */
+  font-size: calc(2px + 2vmin);
+
 }
 
+.btn {
+  background-color: teal;
+  margin: 0 .5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: white solid;
+  color: white;
+  font-size: calc(5px + 2vmin);
+}

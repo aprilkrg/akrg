@@ -6,7 +6,7 @@ class NavBar extends Component {
         return(
             <>
                 <div className='NavBar'>
-                    <button>&#x2630;</button>
+                    <button className='btn'>&#x2630;</button>
 
                 </div>
             </>

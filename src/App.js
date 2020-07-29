@@ -7,6 +7,11 @@ import github from './GitHub_Logo.png';
 import linkedin from './LI-Logo.png';
 
 import NavBar from '../src/components/NavBar/NavBar';
+import About from './components/About/About';
+import Skills from '../src/components/Skills/Skills';
+import Portfolio from './components/Portfolio/Portfolio';
+import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
 
 function openLTab() {
   window.open('https://www.linkedin.com/in/aprilkrg/');
@@ -25,19 +30,23 @@ function App() {
       </header>
       <body>
         <p>APRIL K R GONZALES</p>
+        <About />
+        <Skills />
+        <Portfolio />
+        <Experience />
+        <Contact />
       </body>
       <footer className='Footer'>
-        <p>aprilkrgonzales@gmail.com</p>
-        <p>Denver, CO</p>
-        <div classname='FooterLogo'>
-          <Link onClick={openLTab}>
-            <img src={linkedin} style={{width:'20vh'}} alt='LinkedIn Logo'></img>
-          </Link>
+        <p>aprilkrgonzales@gmail.com <br /> Denver, CO</p>
+        <div >
           <Link onClick={openGTab} to={{ pathname: 'https://github.com/aprilkrgonzales/' }}>
-            <img src={github} style={{width:'20vh'}} alt='GitHub Logo'></img>
+            <img className='FooterLogo' src={github}  alt='GitHub Logo'></img>
+          </Link>
+          <Link onClick={openLTab}>
+            <img className='FooterLogo' src={linkedin}  alt='LinkedIn Logo'></img>
           </Link>
         </div>
-        <p classname='FooterCopyright'>© 2020 April Gonzales</p>
+        <p className='FooterCopyright'>© 2020 April Gonzales</p>
       </footer>
     </div>
   );
